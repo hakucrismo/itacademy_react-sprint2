@@ -1,0 +1,14 @@
+/* Cambio tipografia preestablecida */
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+/* Cambio colores preestablecidos */
+$primary: #5265E1;
+$secondary: #FA5959;
+
+/* Cambio color botón activo del NAV*/
+$nav-pills-link-active-bg: $secondary;
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
