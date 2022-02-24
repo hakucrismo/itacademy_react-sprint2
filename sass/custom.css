@@ -1,7 +1,18 @@
 @charset "UTF-8";
 /* Cambio tipografia preestablecida */
 /* Cambio colores preestablecidos */
-/* Cambio color botón activo del NAV*/
+.base-text-color {
+  color: #49556B;
+}
+
+/* Cambio visualización vertical */
+@media (min-width: 992px) {
+  .alto-100vh {
+    height: 100vh;
+    /* vh --> 100% del viewport height (alto del dispositivo)*/
+  }
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

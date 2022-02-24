@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint2 Bootstrap i sass</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sass/custom.css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sprint2 Bootstrap i sass</title>
+
+	<link ref="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./sass/custom.css">
 </head>
 
 <body>
-<!--
-    <header class="container container-xl d-flex align-items-center justify-content-between">
-            
-			<div class="col-lg-6 d-inline-flex">
-				<a class="navbar-brand" href="#">
-					<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-bookmark.svg" alt="Logo Bookmark" height="20">
-				</a>
-			</div>
 
-			<nav class="col-lg-6 navbar navbar-expand-lg navbar-light nav-pills d-inline-flex bg-success">
-                
-				<div class="container">
+	<!-- HEADER -->
 
-						<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							<img src="/Recursos projecte sprint 2-20220223/Imagenes/icon-hamburger.svg" alt="Logo Bookmark" height="20">
-						</button>
-		
-						<div class="collapse navbar-collapse  bg-warning" id="navbarNav">						
-							<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold text-body" href="#">Features</a>		
-							<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold text-body" href="#">Pricing</a>	
-							<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold text-body" href="#">Contact</a>					
-							<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold active text-white shadow-sm" aria-current="page" href="#">Login</a>
-						</div>
-		
-                </div>
-            </nav>    
-		
-    </header>
+	<header class="d-flex align-items-center justify-content-center p-3">
 
--->
-
-<header class="d-flex align-items-center justify-content-center">
-		
-		<nav class="container navbar navbar-expand-lg navbar-light nav-pills d-inline-flex bg-success    ">
+		<nav class="container navbar navbar-expand-lg navbar-light nav-pills d-inline-flex">
 			<div class="container">
 				<div class="col-lg-6 d-inline-flex">
 					<a class="navbar-brand" href="#">
-						<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-bookmark.svg" alt="Logo Bookmark" height="20">
+						<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-bookmark.svg" alt="Logo Bookmark"
+							height="20">
 					</a>
 				</div>
-                
+
 				<div class="col-lg-6">
-					<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<img src="/Recursos projecte sprint 2-20220223/Imagenes/icon-hamburger.svg" alt="Logo Bookmark" height="20">
+					<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<img src="/Recursos projecte sprint 2-20220223/Imagenes/icon-hamburger.svg" alt="Logo Bookmark"
+							height="20">
 					</button>
-	
-					<div class="collapse navbar-collapse w-100  bg-warning" id="navbarNav">						
-						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold text-body" href="#">Features</a>		
-						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold text-body" href="#">Pricing</a>	
-						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold text-body" href="#">Contact</a>					
-						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold active text-white shadow-sm" aria-current="page" href="#">Login</a>
+
+					<div class="collapse navbar-collapse w-100" id="navbarNav">
+						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold texto-nav-xs" href="#">Features</a>
+						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold" href="#">Pricing</a>
+						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold" href="#">Contact</a>
+						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold active text-white shadow-sm"
+							aria-current="page" href="#">Login</a>
 					</div>
-                </div>
-				
+				</div>
 			</div>
-		</nav>    
-    </header>
-    
+		</nav>
+	</header>
+
+
+	<!-- MAIN -->
+
+	<main>
+		<section class="container px-4 mb-3">
+			
+			<div class="row d-flex align-items-center justify-content-center alto-100vh">
+				
+				<!-- Columna Izquierda con texto -->
+				<div class="col-12 col-lg-6 pe-lg-5 order-2 order-lg-1">
+					<div class="row d-flex align-items-center">
+						<div class="pb-2 text-center text-lg-start">
+							<p class="h1 fw-bold mb-3">A Simple Bookmark Manager</p>
+							<p class="base-text-color">A clear and simple interface to organize your favorite websites. Open
+								a new browser tab and see your sites load instantly. Try it for free.</p>
+						</div>
+					</div>
+					<div class="row d-flex justify-content-center justify-content-lg-start">
+						<button type="button" class="col-5 col-lg-4 btn p-3 m-3 btn-primary fw-bold shadow">Get it on Chrome</button>
+						<button type="button" class="col-5 col-lg-4 btn p-3 m-3 btn-light fw-bold shadow">Get it on Firefox</button>
+					</div>
+				</div>
+
+				<!-- Columna Derecha con IMG -->
+				<div class="col-12 col-lg-6 order-1 order-lg-2">
+					<img class="w-100 h-100" src="/Recursos projecte sprint 2-20220223/Imagenes/illustration-hero.svg"
+						alt="">
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section class="container d-flex align-items-center justify-content-center alto-100vh">
+		</section>
+
+	</main>
+
+
 
 </body>
+
 </html>

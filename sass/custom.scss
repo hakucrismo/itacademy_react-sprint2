@@ -1,14 +1,62 @@
 /* Cambio tipografia preestablecida */
-$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-sans-serif: 'Barlow', sans-serif;
 
 /* Cambio colores preestablecidos */
 $primary: #5265E1;
 $secondary: #FA5959;
+$link-color: $light;
+
+$light: $gray-600;
+
+.base-text-color {
+    color: $gray-600;
+}
+
+.btn-light {
+    color: $gray-600;
+}
+
+/* Añadido tamañado de fuente más pequeña */
+
+.texto-nav-xs {
+    font-size: xx-small;
+}
+
 
 /* Cambio color botón activo del NAV*/
 $nav-pills-link-active-bg: $secondary;
 
 
+/* Cambio de tamaño texto nav*/
+nav {
+    font-size: 40px;
+}
 
+
+
+/* Cambio visualización vertical */
+@media (min-width: 992px) {
+    .alto-100vh {
+        height: 100vh; /* vh --> 100% del viewport height (alto del dispositivo)*/
+    }
+}
+
+
+/* Estilos predefinidos del ancho de Container para mantener el mismo ancho en pantallas superiores a 992px*/
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px,
+  xxl: 960px
+);
+
+
+.forma-rectangulo {
+    width: 250px; 
+    height: 100px; 
+    border: 3px solid #555;
+    background: #428bca;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
