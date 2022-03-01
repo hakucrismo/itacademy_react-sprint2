@@ -23,15 +23,14 @@ $light: $gray-600;
 }
 
 
-/* Cambio color botón activo del NAV*/
-$nav-pills-link-active-bg: $secondary;
-
-
-/* Cambio de tamaño texto nav*/
+/* Cambio de tamaño texto nav
 nav {
     font-size: 40px;
-}
+}*/
 
+
+/* Cambio color botón activo del NAV*/
+$nav-pills-link-active-bg: $secondary;
 
 
 /* Cambio visualización vertical */
@@ -41,7 +40,6 @@ nav {
     }
 }
 
-
 /* Estilos predefinidos del ancho de Container para mantener el mismo ancho en pantallas superiores a 992px*/
 $container-max-widths: (
   sm: 540px,
@@ -50,6 +48,13 @@ $container-max-widths: (
   xl: 960px,
   xxl: 960px
 );
+
+
+/* Ancho de las CARDS */
+.width-cards {
+    width: 220px;
+}
+
 
 
 
