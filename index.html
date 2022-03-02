@@ -7,12 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sprint2 Bootstrap i sass</title>
 
-	<link ref="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="./sass/custom.css">
+	<link rel="stylesheet" href="/css/custom.css">
 </head>
 
-<body>
+<body class="fs-5">
 
 	<!-- HEADER -->
 
@@ -20,7 +21,7 @@
 
 		<nav class="container navbar navbar-expand-lg navbar-light nav-pills d-inline-flex">
 			<div class="container">
-				<div class="col-lg-6 d-inline-flex">
+				<div class=" col-lg-6 d-inline-flex">
 					<a class="navbar-brand" href="#">
 						<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-bookmark.svg" alt="Logo Bookmark"
 							height="20">
@@ -31,16 +32,18 @@
 					<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 						aria-label="Toggle navigation">
-						<img src="/Recursos projecte sprint 2-20220223/Imagenes/icon-hamburger.svg" alt="Logo Bookmark"
+						<img src="/Recursos projecte sprint 2-20220223/Imagenes/icon-hamburger.svg" alt="Abrir menú"
 							height="20">
 					</button>
 
-					<div class="collapse navbar-collapse w-100" id="navbarNav"  style="font-size: small;">
-						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold texto-nav-xs" href="#">Features</a>
-						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold" href="#">Pricing</a>
-						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold" href="#">Contact</a>
-						<a class="nav-link col-lg-3 text-uppercase text-lg-center fw-bold active text-white shadow-sm"
-							aria-current="page" href="#">Login</a>
+					<div class="container d-flex px-5">
+						<div class="collapse navbar-collapse w-100 " id="navbarNav" style="font-size: small;">
+							<a class="nav-link col-lg-3 text-uppercase text-lg-center letter-expand fw-bold" href="#">Features</a>
+							<a class="nav-link col-lg-3 text-uppercase text-lg-center letter-expand fw-bold" href="#">Pricing</a>
+							<a class="nav-link col-lg-3 text-uppercase text-lg-center letter-expand fw-bold" href="#">Contact</a>
+							<a class="nav-link col-lg-3 text-uppercase text-lg-center letter-expand fw-bold active text-white shadow-sm"
+								aria-current="page" href="#">Login</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -50,10 +53,10 @@
 
 	<!-- MAIN -->
 
-	<section class="main container px-4 mb-3">
-		
+	<section class="main container px-4 mb-5 mb-lg-3">
+
 		<div class="row d-flex align-items-center justify-content-center alto-100vh">
-			
+
 			<!-- Columna Izquierda con texto -->
 			<div class="col-12 col-lg-6 pe-lg-5 order-2 order-lg-1">
 				<div class="row d-flex align-items-center">
@@ -64,8 +67,11 @@
 					</div>
 				</div>
 				<div class="row d-flex justify-content-center justify-content-lg-start">
-					<button type="button" class="col-5 col-lg-4 btn p-3 m-3 btn-primary fw-bold shadow">Get it on Chrome</button>
-					<button type="button" class="col-5 col-lg-4 btn p-3 m-3 btn-light fw-bold shadow">Get it on Firefox</button>
+					<button type="button"
+						class="col-5 col-lg-4 btn p-2 m-3 btn-primary fw-bold fs-6 shadow">Get it on
+						Chrome</button>
+					<button type="button" class="col-5 col-lg-4 btn p-2 m-3 btn-light fw-bold shadow">Get it
+						on Firefox</button>
 				</div>
 			</div>
 
@@ -79,38 +85,40 @@
 
 
 	<!-- FEATURES -->
-	
-	<section class="features container px-4 pt-3 my-5 ">
-		
+
+	<section class="features container px-4 pt-3 mb-5 mb-lg-3">
+
 		<!-- Features -->
 		<div class="row d-flex align-items-center justify-content-center ">
-			
+
 			<div class="col-12 col-lg-6 px-lg-5">
 				<div class="row d-flex align-items-center">
 					<div class="pb-2 text-center">
 						<p class="h2 fw-bold mb-3">Features</p>
-						<p class="base-text-color">Our aim is to make it quik and easy for you to access your favorite websites. Your bookmarks synk between your devise so you can acces them on the go.</p>
+						<p class="base-text-color">Our aim is to make it quik and easy for you to access your favorite
+							websites. Your bookmarks synk between your devise so you can acces them on the go.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-			
+
 		<!-- Nav tabs -->
 		<div class="row d-flex justify-content-center">
 
-            <div class="nav nav-tabs col-12 col-lg-8 flex-column flex-lg-row d-flex justify-content-around text-center p-3 mb-5">
-               
-					<a class="nav-link active  border-0 border-bottom" aria-current="page" href="#">Simple Bookmarking</a>
-					<a class="nav-link  border-0 border-bottom" href="#">Speedy Searching</a>
-					<a class="nav-link  border-0 border-bottom" href="#">Easy Shering</a>
-	
-            </div>
+			<div
+				class="nav nav-tabs col-12 col-lg-8 flex-column flex-lg-row d-flex justify-content-around text-center mt-3 mb-5 px-0	">
+
+				<a class="nav-link py-3 border-0 border-bottom border-sm-top active" aria-current="page" href="#">Simple Bookmarking</a>
+				<a class="nav-link py-3 border-0 border-bottom" href="#">Speedy Searching</a>
+				<a class="nav-link py-3 border-0 border-bottom" href="#">Easy Shering</a>
+
+			</div>
 
 		</div>
-			
+
 
 		<div class="row">
-			
+
 			<!-- Columna Izq con IMG -->
 			<div class="col-12 col-lg-6 ps-3">
 				<img class="w-100" src="/Recursos projecte sprint 2-20220223/Imagenes/illustration-features-tab-1.svg"
@@ -124,13 +132,16 @@
 					<div class=" d-flex justify-content-lg-end  ">
 						<div class="pb-2 text-center text-lg-start">
 							<p class="h2 fw-bold mb-3">Bookmark in one click</p>
-							<p class="base-text-color">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+							<p class="base-text-color">Organize your bookmarks however you like. Our simple
+								drag-and-drop interface gives you complete control over how you manage your favorite
+								sites.</p>
 						</div>
 					</div>
 					<div class="d-flex justify-content-center justify-content-lg-start">
-						<button type="button" class="col-5 col-lg-3 btn p-3 m-3 btn-primary fw-bold shadow">More info</button>
+						<button type="button" class="col-5 col-lg-3 btn p-2 btn-primary fw-bold shadow">More
+							info</button>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -139,128 +150,95 @@
 
 	<!-- DOWLOADS -->
 
-	<section class="dowloads container px-4 pt-3 my-5 ">
-	
+	<section class="dowloads container px-4 pt-5 mb-5 mb-lg-3">
+
 		<!-- Features -->
 		<div class="row d-flex align-items-center justify-content-center ">
-			
+
 			<div class="col-12 col-lg-6 px-lg-5">
 				<div class="row d-flex align-items-center">
 					<div class="pb-2 text-center">
 						<p class="h2 fw-bold mb-3">Download the extension</p>
-						<p class="base-text-color">We've got more browsers in the pipeline. Please do let us know if you have got a favorite you'd like us to prioraze.</p>
+						<p class="base-text-color">We've got more browsers in the pipeline. Please do let us know if you
+							have got a favorite you'd like us to prioraze.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<!--  CARDS  -->	
 
-		<div class="row row-cols-1 row-cols-md-3 g-4">
-			<div class="col">
-			  <div class="card">
-				<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-chrome.svg" class="card-img-top" alt="...">
-				<div class="card-body">
-				  <h5 class="card-title fw-bold text-center">Add to Chrome</h5>
-				  <p class="card-text">Minimum version 62.</p>
-				</div>
-				<img src="/Recursos projecte sprint 2-20220223/Imagenes/bg-dots.svg" class="card-img-top" alt="...">
-				<button type="button" class="btn btn-primary btn-sm m-3 p-3">Add & install version</button>
-			  </div>
-			</div>
-			<div class="col">
-			  <div class="card">
-				<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-firefox.svg" class="card-img-top" alt="...">
-				<div class="card-body">
-				  <h5 class="card-title fw-bold text-center">Add to Firefox</h5>
-				  <p class="card-text">Minimum version 55.</p>
-				</div>
-				<img src="/Recursos projecte sprint 2-20220223/Imagenes/bg-dots.svg" class="card-img-top" alt="...">
-				<button type="button" class="btn btn-primary btn-sm m-3 p-3">Add & install version</button>
-			  </div>
-			</div>
-			<div class="col">
-			  <div class="card">
-				<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-opera.svg" class="card-img-top " alt="...">
-				<div class="card-body">
-				  <h5 class="card-title fw-bold text-center">Add to Opera</h5>
-				  <p class="card-text text-center">Minimum version 46.</p>
-				</div>
-				<img src="/Recursos projecte sprint 2-20220223/Imagenes/bg-dots.svg" class="card-img-top" alt="...">
-				<button type="button" class="btn btn-primary btn-sm m-3 p-3">Add & install version</button>
-			  </div>
-			</div>
-		  </div>
+		<div class="row col-12">
+			<div class="col-12 col-md-2"></div>
+			
+			<div class="row d-flex justify-content-center col-12 col-lg-8">
 
-
-		  <div class="row col-12">
-			<div class=" col-0 col-lg-2"></div>
-			<div class=" d-flex align-items-center justify-content-center col-12 col-lg-8" >
+					<!-- CARD 1 -->
+					<div class="row d-flex flex-wrap col-12 col-md-4 width-cards">
+						<div class="col">
 				
-				<!-- CARD 1 -->
-				<div class=" row col-12 col-lg-4 m-1 " style="width: 240px;" >
-
-					<div class="col">
-						<article class="card shadow p-3 mb-5 border-0 rounded-5" style="border-radius: 15px;">
-							
-							<div class="card-body">
-								<div class="d-flex justify-content-center align-items-center mt-2 mb-4 mx-2 mx-lg-5">
-									<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-chrome.svg" class="card-img-top" alt="...">
+							<article class="card shadow mb-2 border-0 border-rounded py-3">
+								<div class="p-3">
+									<div class="d-flex justify-content-center align-items-center w-img-cards mx-5">
+										<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-chrome.svg"
+											class="card-img-top" alt="...">
+									</div>
+									<div class="card-body">
+										<h5 class="card-title fw-bold text-center">Add to Chrome</h5>
+										<p class="card-text text-small text-center">Minimum version 62.</p>
+									</div>
 								</div>
-								<h5 class="card-title">Add Chrome</h5>
-								<p class="card-text" style="font-size: small;">Minimum version 62.</p>
-							</div>
-								<img src="/Recursos projecte sprint 2-20220223/Imagenes/bg-dots.svg" class="card-img-top p-3 m-2" alt="...">
-								<a href="#" class="btn btn-primary">Add & install Extension</a>
-							
+								<img src="/Recursos projecte sprint 2-20220223/Imagenes/bg-dots.svg" class=" mb-3 " alt="...">
+								<button type="button" class="btn btn-primary btn-sm mx-3 p-2 text-small fw-bold">Add & install Extension</button>
+							</article>
 
-						</article>
+						</div>
 					</div>
+					<!-- CARD 2 -->
+					<div class=" row d-flex flex-wrap col-12 col-md-4   margin-top-lg-cd2   width-cards">
+						<div class="col">
 				
-				</div>
-				
-				<!-- CARD 2 -->
-				<div class="row col-12 col-lg-4 m-1 width-cards">
-					
-					<div class="col">
-						<article class="card shadow p-3 mb-5 border-0 rounded-5" style="border-radius: 15px;">
-							
-							<div class="card-body">
-								<div class="d-flex justify-content-center align-items-center mt-2 mb-4 mx-2 mx-lg-5">
-									<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-chrome.svg" class="card-img-top" alt="...">
+							<article class="card shadow mb-2 border-0 border-rounded py-3">
+								<div class="p-3">
+									<div class="d-flex justify-content-center align-items-center w-img-cards mx-5">
+										<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-firefox.svg"
+											class="card-img-top" alt="...">
+									</div>
+									<div class="card-body">
+										<h5 class="card-title fw-bold text-center">Add to Firefox</h5>
+										<p class="card-text text-small text-center">Minimum version 55.</p>
+									</div>
 								</div>
-								<h5 class="card-title">Add Chrome</h5>
-								<p class="card-text" style="font-size: small;">Minimum version 62.</p>
-								
-								<a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
+								<img src="/Recursos projecte sprint 2-20220223/Imagenes/bg-dots.svg" class=" mb-3 " alt="...">
+								<button type="button" class="btn btn-primary btn-sm mx-3 p-2 text-small fw-bold">Add & install Extension</button>
+							</article>
 
-						</article>
+						</div>
 					</div>
+					<!-- CARD 3 -->
+					<div class=" row d-flex flex-wrap col-12 col-md-4   margin-top-lg-cd3   width-cards">
+						<div class="col">
 				
-				</div>
-
-				<!-- CARD 3 -->
-				<div class=" row col-12 col-lg-4 m-1 width-cards">
-
-					<div class="col">
-						<article class="card shadow p-3 mb-5 border-0 rounded-5" style="border-radius: 15px;">
-							
-							<div class="card-body">
-								<div class="d-flex justify-content-center align-items-center mt-2 mb-4 mx-2 mx-lg-5">
-									<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-chrome.svg" class="card-img-top" alt="...">
+							<article class="card shadow mb-5 border-0 border-rounded py-3">
+								<div class="p-3">
+									<div class="d-flex justify-content-center align-items-center w-img-cards mx-5">
+										<img src="/Recursos projecte sprint 2-20220223/Imagenes/logo-opera.svg"
+											class="card-img-top" alt="...">
+									</div>
+									<div class="card-body">
+										<h5 class="card-title fw-bold text-center">Add to Opera</h5>
+										<p class="card-text text-small text-center">Minimum version 46.</p>
+									</div>
 								</div>
-								<h5 class="card-title">Add Chrome</h5>
-								<p class="card-text" style="font-size: small;">Minimum version 62.</p>
-								
-								<a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
+								<img src="/Recursos projecte sprint 2-20220223/Imagenes/bg-dots.svg" class=" mb-3 " alt="...">
+								<button type="button" class="btn btn-primary btn-sm mx-3 p-2 text-small fw-bold ">Add & install Extension</button>
+							</article>
 
-						</article>
+						</div>
 					</div>
-				
-				</div>
+
 			</div>
-			<div class="col-0 col-lg-2"></div>
+			<div class="col-12 col-md-2"></div>
 		</div>
 
 

@@ -1,36 +1,40 @@
+
+
+
 /* Cambio tipografia preestablecida */
 $font-family-sans-serif: 'Barlow', sans-serif;
 
 /* Cambio colores preestablecidos */
 $primary: #5265E1;
 $secondary: #FA5959;
-$link-color: $light;
 
-$light: $gray-600;
+$grey: #6c757d;
+$light: #e5e7e9;
+
+$link-color: $grey;
 
 .base-text-color {
-    color: $gray-600;
+    color: $grey;
 }
 
 .btn-light {
-    color: $gray-600;
+    color: $grey !important; 
 }
+
+
 
 /* Añadido tamañado de fuente más pequeña */
 
-.texto-nav-xs {
-    font-size: xx-small;
+.text-small {
+    font-size: x-small !important;
 }
-
-
-/* Cambio de tamaño texto nav
-nav {
-    font-size: 40px;
-}*/
 
 
 /* Cambio color botón activo del NAV*/
 $nav-pills-link-active-bg: $secondary;
+
+$nav-tabs-link-active-border-color: $secondary !important;
+$nav-tabs-link-hover-border-color: $secondary !important;
 
 
 /* Cambio visualización vertical */
@@ -41,18 +45,46 @@ $nav-pills-link-active-bg: $secondary;
 }
 
 /* Estilos predefinidos del ancho de Container para mantener el mismo ancho en pantallas superiores a 992px*/
+
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 960px,
-  xxl: 960px
+  xl: 1140px,
+  xxl: 1140px
 );
 
+/* Espaciado letra NAV */
+.letter-expand {
+    letter-spacing: 2px;
+  }
 
-/* Ancho de las CARDS */
+
+/* CARDS */
 .width-cards {
-    width: 220px;
+    width: 250px !important;
+}
+.card-body {
+    color: $grey;
+}
+
+/* Borde curvo CARDS */
+.border-rounded {
+    border-radius: 15px !important;
+}
+
+/* Margin top CARDS en lg*/
+.margin-top-lg-cd2 {
+    margin-top: 30px !important;
+}
+.margin-top-lg-cd3 {
+    margin-top: 60px !important;
+}
+
+/* Tamaño IMG de CARDS*/
+.w-img-cards {
+    max-width: 70px !important;
+    max-height: 70px !important;
 }
 
 
@@ -64,5 +96,6 @@ $container-max-widths: (
     border: 3px solid #555;
     background: #428bca;
 }
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
