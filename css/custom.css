@@ -1,63 +1,10 @@
 @charset "UTF-8";
+/* PONER VARIABLES ANTES DEL IMPORT BOOTSTRAP */
 /* Cambio tipografia preestablecida */
 /* Cambio colores preestablecidos */
-.base-text-color {
-  color: #6c757d; }
-
-.btn-light {
-  color: #6c757d !important; }
-
-/* Primera sección - Cambio visualización vertical  */
-@media (min-width: 992px) {
-  .alto-100vh {
-    height: 100vh;
-    /* vh --> 100% del viewport height (alto del dispositivo)*/ } }
-
 /* Cambio de estilos del ancho Container >= 1140px*/
-/* Añadido tamañado de fuente más pequeña */
-.text-small {
-  font-size: x-small !important; }
-
 /* NAV HEADER*/
-/* NO EXISTE ESTA VARIABLE para el bg :(  */
-.letter-expand {
-  letter-spacing: 2px; }
-
-/* NAV FEATURES Hover */
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  color: #FA5959 !important; }
-
-/* CARDS */
-.width-cards {
-  width: 250px !important; }
-
-.card-body {
-  color: #6c757d; }
-
-.border-rounded {
-  border-radius: 15px !important; }
-
-/* Margin top CARDS en lg */
-.margin-top-lg-cd2 {
-  margin-top: 30px !important; }
-
-.margin-top-lg-cd3 {
-  margin-top: 60px !important; }
-
-/* Tamaño IMG de CARDS */
-.w-img-cards {
-  max-width: 70px !important;
-  max-height: 70px !important; }
-
 /* FAQS */
-/*
-.forma-rectangulo {
-    width: 250px; 
-    height: 100px; 
-    border: 3px solid #555;
-    background: #428bca;
-}
-*/
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -3607,7 +3554,7 @@ textarea.form-control-lg {
     z-index: 3;
     border-color: #a9b2f0;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25); }
+    box-shadow: none; }
 
 .accordion-header {
   margin-bottom: 0; }
@@ -7868,3 +7815,57 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+.base-text-color {
+  color: #6c757d; }
+
+.btn-light {
+  color: #6c757d !important; }
+
+/* Primera sección - Cambio visualización vertical  */
+@media (min-width: 992px) {
+  .alto-100vh {
+    height: 100vh;
+    /* vh --> 100% del viewport height (alto del dispositivo)*/ } }
+
+/* Añadido tamañado de fuente más pequeña */
+.text-small {
+  font-size: x-small !important; }
+
+.letter-expand {
+  letter-spacing: 2px; }
+
+/* Hover NAV Header */
+.nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
+  background: #fff;
+  color: #FA5959 !important; }
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  color: #FA5959 !important; }
+
+/* NAV FEATURES */
+.features-nav-tabs .nav-link:hover, .features-nav-tabs .nav-link:focus, .features-nav-tabs .nav-link:active {
+  border-bottom: 10px;
+  border: #FA5959; }
+
+/* CARDS */
+.width-cards {
+  width: 250px !important; }
+
+.card-body {
+  color: #6c757d; }
+
+.border-rounded {
+  border-radius: 15px !important; }
+
+.w-img-cards {
+  max-width: 70px !important;
+  max-height: 70px !important; }
+
+@media (min-width: 1200px) {
+  .margin-top-lg-cd2 {
+    margin-top: 30px !important; } }
+
+@media (min-width: 1200px) {
+  .margin-top-lg-cd3 {
+    margin-top: 60px !important; } }

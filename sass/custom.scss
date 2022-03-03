@@ -1,3 +1,4 @@
+/* PONER VARIABLES ANTES DEL IMPORT BOOTSTRAP */
 
 /* Cambio tipografia preestablecida */
 $font-family-sans-serif: 'Barlow', sans-serif;
@@ -7,8 +8,33 @@ $primary: #5265E1;
 $secondary: #FA5959;
 $grey: #6c757d;
 $light: #e5e7e9;
-
 $link-color: $grey;
+
+/* Cambio de estilos del ancho Container >= 1140px*/
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+);
+
+/* NAV HEADER*/
+$nav-pills-link-active-bg: $secondary;
+$nav-tabs-link-active-border-color: $secondary !important;
+
+/* FAQS */
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+$accordion-button-active-bg: none;
+$accordion-button-active-color: $secondary;
+$accordion-button-focus-box-shadow: none;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
 
 .base-text-color {
     color: $grey;
@@ -25,33 +51,26 @@ $link-color: $grey;
     }
 }
 
-/* Cambio de estilos del ancho Container >= 1140px*/
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1140px
-);
-
 /* Añadido tamañado de fuente más pequeña */
 .text-small {
     font-size: x-small !important;
 }
 
-
-/* NAV HEADER*/
-
-$nav-pills-link-active-bg: $secondary;
-$nav-tabs-link-active-border-color: $secondary !important;
-$nav-link-hover-bg: none !important; /* NO EXISTE ESTA VARIABLE para el bg :(  */
-
 .letter-expand {
     letter-spacing: 2px;
-  }
+}
 
+/* Hover NAV Header */
+.nav-pills {
+    .nav-link {
+        &:hover,
+        &:focus {   
+            background: #fff;
+            color: $secondary !important;
+        }
+    }
+}    
 
-/* NAV FEATURES Hover */
 .nav-tabs{
     .nav-link {
         &:hover,
@@ -59,11 +78,21 @@ $nav-link-hover-bg: none !important; /* NO EXISTE ESTA VARIABLE para el bg :(  *
             color: $secondary !important;
         }
     }
-}    
+}  
 
+/* NAV FEATURES */
+.features-nav-tabs {
+    .nav-link {
+        &:hover,
+        &:focus,
+        &:active {
+            border-bottom: 10px;
+            border: $secondary;
+        }
+    }
+}  
 
 /* CARDS */
-
 .width-cards {
     width: 250px !important;
 }
@@ -75,36 +104,19 @@ $nav-link-hover-bg: none !important; /* NO EXISTE ESTA VARIABLE para el bg :(  *
     border-radius: 15px !important;
 }
 
-/* Margin top CARDS en lg */
-.margin-top-lg-cd2 {
-    margin-top: 30px !important;
-}
-.margin-top-lg-cd3 {
-    margin-top: 60px !important;
-}
-
-/* Tamaño IMG de CARDS */
 .w-img-cards {
     max-width: 70px !important;
     max-height: 70px !important;
 }
 
-
-/* FAQS */
-
-$accordion-icon-color: $primary;
-$accordion-icon-active-color: $secondary;
-$accordion-button-active-bg: none;
-$accordion-button-active-color: $secondary;
-
-
-/*
-.forma-rectangulo {
-    width: 250px; 
-    height: 100px; 
-    border: 3px solid #555;
-    background: #428bca;
+.margin-top-lg-cd2 {
+    @media (min-width: 1200px) {
+        margin-top: 30px !important;
+    }
 }
-*/
+.margin-top-lg-cd3 {
+    @media (min-width: 1200px) {
+        margin-top: 60px !important;
+    }
+}
 
-@import "../node_modules/bootstrap/scss/bootstrap";
