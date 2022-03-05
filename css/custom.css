@@ -7835,18 +7835,36 @@ textarea.form-control-lg {
 .letter-expand {
   letter-spacing: 2px; }
 
-/* Hover NAV Header */
-.nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
+/* HEADER NAV */
+.btn-primary:hover {
+  color: #5265E1 !important;
+  background: #fff !important;
+  box-shadow: inset 0 0 0 0.125rem #5265E1 !important; }
+
+.btn-secondary {
+  font-size: small; }
+  .btn-secondary:hover {
+    background: #fff;
+    color: #FA5959 !important;
+    box-shadow: inset 0 0 0 0.125rem #FA5959 !important; }
+
+.btn-light:hover {
+  background: #fff;
+  color: #6c757d !important;
+  box-shadow: inset 0 0 0 0.125rem #6c757d !important; }
+
+header .nav-pills .nav-link:hover, header .nav-pills .nav-link:focus {
   background: #fff;
   color: #FA5959 !important; }
 
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  color: #FA5959 !important; }
+header .nav-tabs {
+  border-bottom: 0; }
+  header .nav-tabs .nav-link:hover, header .nav-tabs .nav-link:focus {
+    color: #FA5959 !important; }
 
-/* NAV FEATURES */
-.features-nav-tabs .nav-link:hover, .features-nav-tabs .nav-link:focus, .features-nav-tabs .nav-link:active {
-  border-bottom: 10px;
-  border: #FA5959; }
+/* FEATURES NAV */
+.features-nav-tabs .nav-link:hover, .features-nav-tabs .nav-link:focus {
+  color: #FA5959; }
 
 /* CARDS */
 .width-cards {
@@ -7869,3 +7887,15 @@ textarea.form-control-lg {
 @media (min-width: 1200px) {
   .margin-top-lg-cd3 {
     margin-top: 60px !important; } }
+
+/* FOOTER */
+footer p {
+  color: #fff; }
+
+footer .btn-secondary {
+  font-size: small;
+  color: #fff; }
+  footer .btn-secondary:hover {
+    background: #fff;
+    color: #FA5959 !important;
+    box-shadow: inset 0 0 0 0.125rem #FA5959 !important; }
